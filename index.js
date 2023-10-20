@@ -1,7 +1,5 @@
-import express  from "express";
-import home from "./routes/home.js"
+import express  from "express"; 
 const app =  express();
-app.use(express.json());
-app.use(home);
+app.use(express.json()); 
 const port =   5009;
 app.listen(port, ()=>console.log("App is running on port "+port));
